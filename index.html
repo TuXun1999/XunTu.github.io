@@ -533,10 +533,10 @@
                 <img alt="music streaming app" src="./assets/img/project-music-player.png" style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Music Player Web-App<i
+                <span class="card-title activator teal-text hoverline">Mobile Manipulation Policy Generalization<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  A music streaming web app based on Django
+                  Generalize the few-shot mobile manipulation policy
                 </p>
               </div>
               <div class="card-reveal">
@@ -545,21 +545,17 @@
                 <span class="card-title grey-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li><b>Tools:</b> Django, HTML, CSS, Bootstrap, SQLite, AWS S3, Heroku</li>
-                  <li>Register/login to the web app(with OAuth-based Google Sign-In).</li>
-                  <li>Search and filter songs based on language and singer.</li>
-                  <li>Create multiple playlists and add/remove songs to/from playlist.</li>
-                  <li>Scroll through recently played/viewed songs.</li>
+                  <li><b>Keywords:</b> Diffusion policy, RL, policy generalization, mobile manipulation, few-shot learning, Robotics</li>
+                  <li>(Under Progress).</li>
+                  <li>Learn the target mobile manipulation policy from on a few demonstrations.</li>
+                  <li>Generalize the policy to unseen scenarios in training dataset.</li>
 
 
                 </ul>
                 <div class="card-action">
-                  <a aria-label="Visit " href="https://galvanic-music.herokuapp.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/music-player"
-                    target="_blank" data-position="top" data-tooltip="View Source"
+                  <a aria-label="Visit the GitHub repo for  project"
+                    href="https://github.com/TuXun1999/denoising-diffusion-pytorch" target="_blank"
+                    data-position="top" data-tooltip="View Source"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
                       class="fa fa-github"></i></a>
                 </div>
@@ -570,13 +566,13 @@
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="quiz app" src="./assets/img/project-quizup-logo-1.png" style="height: 100%; width: 100%" class="activator" />
+                <img alt="quiz app" src="./assets/img/superq-grasp.png" style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Quiz Web-App<i
+                <span class="card-title activator teal-text hoverline">SuperQ-GRASP<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  A quiz playing web app based on Django
+                  Grasp the target large object in any arbitrary shape
                 </p>
               </div>
               <div class="card-reveal">
@@ -585,17 +581,24 @@
                 <span class="card-title grey-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li><b>Tools:</b> Django, HTML, CSS, Bootstrap, SQLite, Heroku</li>
-                  <li>Register/login to the web app(with OAuth-based Google Sign-In).</li>
-                  <li>Play Quiz and see the leaderboard</li>
-
+                  <li><b>Keywords:</b> Grasping, Model Decomposition, Robotics</li>
+                  <li>Developed to grasp the large objects, such as a chair, that are common in mobile manipulation tasks, but rare in traditional tabletop scenarios.</li>
+                  <li> Pipeline:
+                      <ul>
+                        <li>Decompose the target object into primitives at first</li>
+                        <li>Generate grasp poses on individual primitives as candidates</li>
+                        <li>Rank the grasp pose candidates & Filter out the invalid ones</li>
+                    </ul>
+                  </li>
+                  
+                  <li>Validated on the real-world robotic platform</li>
                 </ul>
                 <div class="card-action">
-                  <a aria-label="Visit " href="https://quiz-up-app.herokuapp.com/" target="_blank" data-position="top"
+                  <a aria-label="Visit " href="https://rpm-lab-umn.github.io/superq-grasp-webpage/" target="_blank" data-position="top"
                     data-tooltip="View Online"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
                       class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/QuizUp"
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/TuXun1999/SuperQ-GRASP"
                     target="_blank" data-position="top" data-tooltip="View Source"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
                       class="fa fa-github"></i></a>
@@ -604,44 +607,8 @@
             </div>
           </div>
 
-          <!-- 1. Django Project -->
-          <!-- <div class="col s12 m6 l6">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="django web app" src="./assets/img/project-library-logo.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Local Library Web-App<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A web-app that creates an online catalog for a small local library, where users can browse available books and manage their accounts.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> HTML, CSS, Bootstrap, SQLite, Django, Heroku</li>
-                  <li>Users can view list and detail information for books and authors.</li>
-                  <li>Admin users can create and manage models.</li>
-                  <li>Librarians can renew reserved books.</li>
 
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://django-local-lib.herokuapp.com" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/django-local-library"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- Flask Project -->
+          <!-- Chair-moving Project -->
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
@@ -649,10 +616,10 @@
                 style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Blog Web-App<i
+                <span class="card-title activator teal-text hoverline">Automatic Obstacle Removal on the Scheduled Path<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  A simple and extensible blog web-app based on Flask.
+                  Remove the obstacle on the navigation routine path
                 </p>
               </div>
               <div class="card-reveal">
@@ -661,19 +628,17 @@
                 <span class="card-title teal-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li><b>Tools:</b> HTML, CSS, Bootstrap, Flask, SQLAlchemy, Postgresql, Python</li>
-                  <li>Users can view posts and contact the admin via Contact Page.</li>
-                  <li>Admin can Add, Delete, Update posts.</li>
-
+                  <li><b>Keywords:</b>Object Detection, Grasping, Motion Planning, ROS</li>
+                  <li>Use libraries from Boston Dynamics to schedule a path to the target location</li>
+                  <li>Use OpenCV for image processing</li>
+                  <li>Use DINOv2, a visual feature extractor to detect the obstacles and determine the part to grasp</li>
+                  <li>Use libraries from Boston Dynamics to move the obstacle out of the planned path</li>
 
                 </ul>
                 <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://flask-heroku-blog.herokuapp.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/flask-blog"
-                    target="_blank" data-position="top" data-tooltip="View Source"
+                  <a aria-label="Visit the GitHub repo for  project"
+                    href="https://github.com/RPM-lab-UMN/spot_ros/tree/master" target="_blank"
+                    data-position="top" data-tooltip="View Source"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
                       class="fa fa-github"></i></a>
                 </div>
@@ -685,13 +650,13 @@
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="./assets/img/project-aim_bert-bias.png" style="height: 100%; width: 100%" class="activator" />
+                <img alt="Screenshot of  web app" src="./assets/img/fcav.jpg" style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Visual Question Answering<i
+                <span class="card-title activator teal-text hoverline">SLAM Dataset in Adverse Weather Conditions<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  An attention-based classification model that aims at generating an answer for a given input image.
+                  A dataset to test SLAM algorithms in adverse weather conditions
                 </p>
               </div>
               <div class="card-reveal">
@@ -700,20 +665,14 @@
                 <span class="card-title teal-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li>Incorporated Convolution Neural Networks (CNN) for extracting image features and Long Short Term
-                    Memory for extracting question
-                    embeddings.</li>
-                  <li>Tested the model on the COCO dataset, abstract scenes images, and got 69% overall accuracy on the
-                    VQA evaluation metric.</li>
+                  <li><b>Keywords:</b>SLAM, IMU, Sensor Calibration</li>
+                  <li>Helped in establishing a sample dataset with images in various weather conditions for researchers to test their SLAM algorithms;
+
+                  <li>Helped in collecting the visual and IMU data; </li>
+                  <li>Validated the calibration methods and wrote technical documentations; </li>
+                  <li>Evaluated several existing SLAM algorithms (e.g. ORB-SLAM2); </li>
 
                 </ul>
-                <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for  project"
-                    href="https://github.com/varadbhogayata/visual-question-answering" target="_blank"
-                    data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
               </div>
             </div>
           </div>
@@ -722,13 +681,13 @@
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="./assets/img/computer-vision-v2-04.png" style="height: 100%; width: 100%" class="activator" />
+                <img alt="Screenshot of  web app" src="./assets/img/pf.png" style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Video Summarizer<i
+                <span class="card-title activator teal-text hoverline">Automatic Waypoint Navigator<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  A Seq2Seq model that generates a short summary of the given input video.
+                  A custom robot to go along the assigned waypoints
                 </p>
               </div>
               <div class="card-reveal">
@@ -737,35 +696,33 @@
                 <span class="card-title brown-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li>Incorporated CNN to detect and classify objects in the video frames and Long Short Term Memory for
-                    generating a summary.</li>
-                  <li>Evaluated the model on MSVD (Microsoft Video Description Corpus) dataset; achieved 0.77, 0.71,
-                    0.52 scores respectively on ROGUE,
-                    BLEU, METEOR evaluation metrics.</li>
+                  <li><b>Keywords:</b>Particle Filter, Bayesian Inference</li>
+                  <li>Implemented a Particle Filter for robust localization of the robot.</li>
+                  <li>Helped in designing the mechanical structure of the robot for better stability and performance.</li>
 
                 </ul>
                 <!-- TODO: UPLOAD THIS PROJECT ON GITHUB -->
                 <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/"
-                    target="_blank" data-position="top" data-tooltip="View Source"
+                  <a aria-label="Visit " href="" target="_blank" data-position="top"
+                    data-tooltip="View Online"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
+                      class="fa fa-external-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Image Generator -->
+          <!-- Feedforward Control -->
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="./assets/img/gan.jpg" style="height: 100%; width: 100%" class="activator" />
+                <img alt="Screenshot of  web app" src="./assets/img/feedforward-control.jpg" style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Image Generator<i
+                <span class="card-title activator teal-text hoverline">Feedforward Tracking Control in 3D Printing<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  An image generator based on the concept of adversarial networks (GANs)
+                  A algorithm to remove the motion noise in 3D printing process
                 </p>
               </div>
               <div class="card-reveal">
@@ -774,33 +731,26 @@
                 <span class="card-title brown-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li>Developed system was tested on a human-face database and loss was calculated by comparing the PCAs
-                    of generated and original image.</li>
-                  <li>Calculated difference in PCA was less than 10%, depicting the successful generation of an image by
-                    the generator.</li>
-
+                  <li><b>Keywords:</b>Feedforward Control, B-spline functions, 3D Printing</li>
+                  <li>Studied the proposed FBS method in reducing the vibrations in 3D printing for linear systems;</li>
+                  <li>Proposed to use Newton-Gaussian methods to extend the method to reduce the vibrations for nonlinear systems;</li>
+                  <li>Wrote up Matlab codes for some starting tests on this method;</li>
                 </ul>
-                <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
               </div>
             </div>
           </div>
 
-          <!-- Head Counting System -->
+          <!-- Excavator-->
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="./assets/img/Blog-Images-Forget-Machine-Learning-Humans-Still-Have-a-Lot-to-Learn-Part-II.jpg" style="height: 100%; width: 100%" class="activator" />
+                <img alt="Screenshot of  web app" src="./assets/img/excavator.png" style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Head Counting System<i
+                <span class="card-title activator teal-text hoverline">BuilderX Excavator Prototype with Autonomous Obstacle Avoidance<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  A system that calculates the attendance of the class from a panoramic image of a live classroom.
+                  A prototype of autonomous excavator that can avoid obstacles while navigating its arm
                 </p>
               </div>
               <div class="card-reveal">
@@ -809,18 +759,45 @@
                 <span class="card-title brown-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li>Used Singular Value Decomposition for image compression; applied various image processing
-                    techniques and morphological operations to
-                    detect the number of heads.</li>
-
+                  <li><b>Keywords:</b>ROS, Kalman Filter, A* algorithm, Forward/Inverse kinematics</li>
+                  <li>Developed ideas to avoid the obstacle automatically, while the excavator is operating its arm, based on one excavator prototype provided by BuilderX corporation;</li>
+                  <li>Helped in collecting point cloud data from a depth camera;</li>
+                  <li>Developed the motion planning and robotic arm control algorithms;</li>
+                  <li>Deployed the sensors to read joint angles, including writing the communication programs and filtering out the noises;</li>
                 </ul>
                 <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for  project"
-                    href="https://github.com/varadbhogayata/visual-question-answering" target="_blank"
-                    data-position="top" data-tooltip="View Source"
+                  <a aria-label="Visit " href="https://github.com/TuXun1999/starter-hugo-academic-personal-website/blob/main/static/uploads/VE450_Thesis.pdf" target="_blank" data-position="top"
+                    data-tooltip="View Online"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
+                      class="fa fa-external-link"></i></a>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- P6-Style Out‐of‐Order Instruction Processor -->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Screenshot of  web app" src="./assets/img/p6.webp" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">P6 Style Out‐of‐Order Instruction Processor<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  A simulated processor for a computer to execute instructions out-of-order [1]
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title brown-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Keywords:</b>Computer Architecture, Out-of-Order Execution, Verilog</li>
+                  <li>Helped in developing a P6‐style Out‐of‐Order instruction processor that can work correctly and efficiently to process the provided instructions;</li>
+                  <li>Designed and implemented the memory I/O components, especially the caches;</li>
+                  <li>Benchmarked the processor performance;</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -1182,5 +1159,6 @@
     })
   </script>
 </body>
+<!-- Reference: https://www.slideserve.com/cmcewen/computer-architecture-the-p6-microarchitecture-an-example-of-an-out-of-order-micro-processor-powerpoint-ppt-presentation-->
 
 </html>
