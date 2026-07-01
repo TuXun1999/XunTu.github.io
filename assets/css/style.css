@@ -312,6 +312,10 @@ h3 {
   height: 100vh;
 }
 
+#intro.full-height {
+  min-height: 118vh;
+}
+
 /* Original */
 
 /* #intro.section {
@@ -330,6 +334,18 @@ h3 {
   left: 0;
   position: absolute;
   top: 0;
+}
+
+#intro .gif {
+  width: 47.5%;
+  height: auto;
+  max-width: 100%;
+  margin: 0 8px 16px 0;
+  vertical-align: middle;
+}
+
+#intro .gif:nth-of-type(2) {
+  width: 50%;
 }
 
 /* #intro.section .container *:not(span) {
@@ -693,5 +709,14 @@ small {
   }
   #intro.section {
     background-position-x: 30%;
+  }
+
+  #intro.full-height {
+    min-height: 130vh;
+  }
+
+  #intro .gif {
+    width: clamp(96px, 28vw, 140px);
+    margin: 0 6px 12px 0;
   }
 }
